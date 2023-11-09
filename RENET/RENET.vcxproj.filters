@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{5d34f05c-aad8-4a0d-93d0-f806847904c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{c3062d5c-de03-4543-b28e-b4109b24b80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pattern">
+      <UniqueIdentifier>{4d595151-f5e8-4905-9334-9b2d31487cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Synchronization">
+      <UniqueIdentifier>{ea63e8bf-b8c2-4d66-9595-7793cde25c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetEngine">
+      <UniqueIdentifier>{cb33a506-af71-46e0-86d9-cb051c0d6117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{0b9dbb24-f618-4cfc-9f37-59f511b98316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Session">
+      <UniqueIdentifier>{a91b0eb7-7b12-4665-bf3c-4b24c266927b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OleDB">
+      <UniqueIdentifier>{4a5b8933-5637-483b-b0a0-22c7b3aa86fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UDP">
+      <UniqueIdentifier>{2e28e7ff-dc20-4ddc-89e5-c58fb0582af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{0d6fc3c9-94d0-4ab0-9668-cbfb07246b5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RENET.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyRandom.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgQueue.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgQueueUnit.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivateProfile.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Profiler.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="StringAnalysis.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Dialog.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowBase.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicMemoryPool.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="LookAsideList.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadSafeStaticMemPool.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchObject.cpp">
+      <Filter>Synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="Heartbeat.cpp">
+      <Filter>NetEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPManager.cpp">
+      <Filter>NetEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Msg.cpp">
+      <Filter>NetEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Netmsg.cpp">
+      <Filter>NetEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>NetEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionManager.cpp">
+      <Filter>NetEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SockSystem.cpp">
+      <Filter>NetEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptionFilter.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Monitor.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoConnSession.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseSession.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="ListeningSession.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoWaySession.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="OleDBSession.cpp">
+      <Filter>OleDB</Filter>
+    </ClCompile>
+    <ClCompile Include="OleDBSource.cpp">
+      <Filter>OleDB</Filter>
+    </ClCompile>
+    <ClCompile Include="THOleDBSource.cpp">
+      <Filter>OleDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Connection.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionManager.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="RelaySession.cpp">
+      <Filter>UDP</Filter>
+    </ClCompile>
+    <ClCompile Include="BlowFish.cpp">
+      <Filter>Security</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GlobalDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RENET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atlaux.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeConvert.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyRandom.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Facilities.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameKeeper.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameSkip.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="IDGenerator.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgQueue.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgQueueUnit.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivateProfile.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Profiler.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Que.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="StringAnalysis.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Dialog.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowBase.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicMemoryPool.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="LookAsideList.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryBlockManager.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadSafeStaticMemPool.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassFactory.h">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="ScopedLock.h">
+      <Filter>Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Sectionobject.h">
+      <Filter>Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinLock.h">
+      <Filter>Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchObject.h">
+      <Filter>Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Synchronized.h">
+      <Filter>Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Heartbeat.h">
+      <Filter>NetEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPManager.h">
+      <Filter>NetEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Msg.h">
+      <Filter>NetEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Netmsg.h">
+      <Filter>NetEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Service.h">
+      <Filter>NetEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionManager.h">
+      <Filter>NetEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SockSystem.h">
+      <Filter>NetEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ExceptionFilter.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Monitor.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="vld.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="vldapi.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoConnSession.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseSession.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="ListeningSession.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="TwoWaySession.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="DBStruct.h">
+      <Filter>OleDB</Filter>
+    </ClInclude>
+    <ClInclude Include="OleDBSession.h">
+      <Filter>OleDB</Filter>
+    </ClInclude>
+    <ClInclude Include="OleDBSource.h">
+      <Filter>OleDB</Filter>
+    </ClInclude>
+    <ClInclude Include="THOleDBSource.h">
+      <Filter>OleDB</Filter>
+    </ClInclude>
+    <ClInclude Include="Connection.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionManager.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="RelaySession.h">
+      <Filter>UDP</Filter>
+    </ClInclude>
+    <ClInclude Include="BlowFish.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="BlowFish_data.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="vld.lib">
+      <Filter>Debug</Filter>
+    </Library>
+    <Library Include="vldmt.lib">
+      <Filter>Debug</Filter>
+    </Library>
+    <Library Include="vldmtdll.lib">
+      <Filter>Debug</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RENET.rc" />
+  </ItemGroup>
+</Project>

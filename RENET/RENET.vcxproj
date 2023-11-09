@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DCB756CB-C9B4-47FC-8ACA-888FF2D29E35}</ProjectGuid>
+    <RootNamespace>RENET</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>..\Bin\Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>$(ProjectName)_D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>..\Bin\Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RENET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;mswsock.lib;dbghelp.lib;Iphlpapi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB: libc.lib; libcmt.lib; msvcrt.lib; libcd.lib; msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>../bin/RENET_D.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RENET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;mswsock.lib;dbghelp.lib;Iphlpapi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../bin/RENET.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>../bin/RENET.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoConnSession.cpp" />
+    <ClCompile Include="BaseSession.cpp" />
+    <ClCompile Include="BlowFish.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="ConnectionManager.cpp" />
+    <ClCompile Include="DynamicMemoryPool.cpp" />
+    <ClCompile Include="EasyRandom.cpp" />
+    <ClCompile Include="ExceptionFilter.cpp" />
+    <ClCompile Include="Heartbeat.cpp" />
+    <ClCompile Include="IOCPManager.cpp" />
+    <ClCompile Include="ListeningSession.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="LookAsideList.cpp" />
+    <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="Msg.cpp" />
+    <ClCompile Include="MsgQueue.cpp" />
+    <ClCompile Include="MsgQueueUnit.cpp" />
+    <ClCompile Include="Netmsg.cpp" />
+    <ClCompile Include="OleDBSession.cpp" />
+    <ClCompile Include="OleDBSource.cpp" />
+    <ClCompile Include="Packet.cpp" />
+    <ClCompile Include="PrivateProfile.cpp" />
+    <ClCompile Include="Profiler.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="RelaySession.cpp" />
+    <ClCompile Include="RENET.cpp" />
+    <ClCompile Include="Service.cpp" />
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionManager.cpp" />
+    <ClCompile Include="SockSystem.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringAnalysis.cpp" />
+    <ClCompile Include="SynchObject.cpp" />
+    <ClCompile Include="THOleDBSource.cpp" />
+    <ClCompile Include="ThreadSafeStaticMemPool.cpp" />
+    <ClCompile Include="TwoWaySession.cpp" />
+    <ClCompile Include="Win32Dialog.cpp" />
+    <ClCompile Include="WindowBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atlaux.h" />
+    <ClInclude Include="AutoConnSession.h" />
+    <ClInclude Include="BaseSession.h" />
+    <ClInclude Include="BlowFish.h" />
+    <ClInclude Include="BlowFish_data.h" />
+    <ClInclude Include="ChunkAllocator.h" />
+    <ClInclude Include="ClassFactory.h" />
+    <ClInclude Include="CodeConvert.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="ConnectionManager.h" />
+    <ClInclude Include="DBStruct.h" />
+    <ClInclude Include="DynamicMemoryPool.h" />
+    <ClInclude Include="EasyRandom.h" />
+    <ClInclude Include="ExceptionFilter.h" />
+    <ClInclude Include="Facilities.h" />
+    <ClInclude Include="FrameKeeper.h" />
+    <ClInclude Include="FrameSkip.h" />
+    <ClInclude Include="GlobalDefine.h" />
+    <ClInclude Include="Heartbeat.h" />
+    <ClInclude Include="IDGenerator.h" />
+    <ClInclude Include="IOCPManager.h" />
+    <ClInclude Include="ListeningSession.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="LookAsideList.h" />
+    <ClInclude Include="MemoryBlockManager.h" />
+    <ClInclude Include="Monitor.h" />
+    <ClInclude Include="Msg.h" />
+    <ClInclude Include="MsgQueue.h" />
+    <ClInclude Include="MsgQueueUnit.h" />
+    <ClInclude Include="Netmsg.h" />
+    <ClInclude Include="ObjMap.h" />
+    <ClInclude Include="OleDBSession.h" />
+    <ClInclude Include="OleDBSource.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="PrivateProfile.h" />
+    <ClInclude Include="Profiler.h" />
+    <ClInclude Include="Que.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="RelaySession.h" />
+    <ClInclude Include="RENET.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScopedLock.h" />
+    <ClInclude Include="Sectionobject.h" />
+    <ClInclude Include="Service.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="SessionManager.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SockSystem.h" />
+    <ClInclude Include="SpinLock.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringAnalysis.h" />
+    <ClInclude Include="SynchObject.h" />
+    <ClInclude Include="Synchronized.h" />
+    <ClInclude Include="THOleDBSource.h" />
+    <ClInclude Include="ThreadSafeStaticMemPool.h" />
+    <ClInclude Include="TwoWaySession.h" />
+    <ClInclude Include="vld.h" />
+    <ClInclude Include="vldapi.h" />
+    <ClInclude Include="Win32Dialog.h" />
+    <ClInclude Include="WindowBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="vld.lib" />
+    <Library Include="vldmt.lib" />
+    <Library Include="vldmtdll.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RENET.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
