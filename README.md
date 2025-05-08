@@ -7,6 +7,10 @@ IOCP 기반 비동기 네트워크 처리, 멀티스레드 아키텍처, 유저 
 
 ---
 
+![ThreadTimer Banner](https://img.shields.io/badge/C%2B%2B-High%20Performance-blue.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
+
+---
+
 ## 🎯 목적 및 방향성
 
 - **실전 운영 경험에 기반한 구조 설계**
