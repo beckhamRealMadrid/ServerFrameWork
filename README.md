@@ -105,16 +105,16 @@ IOCP 기반 비동기 네트워크 처리, 멀티스레드 아키텍처, 유저 
 서버 구조를 시각적으로 표현한 다이어그램입니다. 각 모듈이 어떻게 연결되고 동작하는지 한눈에 확인하실 수 있습니다.
 
 ### 🔹 서버 샤드 구조 개요
-![Shard 구조](/ServerFrameWork_Shard.jpg)
+![Shard 구조](/ServerFrameWork_Shard.png)
 
 ### 🔹 샤드 정보 흐름도
-![Shard Info](/ServerFrameWork_Shard_Info.jpg)
+![Shard Info](/ServerFrameWork_Shard_Info.png)
 
 ### 🔹 월드 서버 구조
-![World 구조](/ServerFrameWork_World.jpg)
+![World 구조](/ServerFrameWork_World.png)
 
 ### 🔹 로그인 프로세스 흐름
-![Login 구조](/ServerFrameWork_Login.jpg)
+![Login 구조](/ServerFrameWork_Login.png)
 
 ---
 
